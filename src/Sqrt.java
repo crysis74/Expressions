@@ -1,4 +1,4 @@
-public class Sqrt extends Operation{
+public class Sqrt extends Unary {
 
     public Sqrt(Expression per1) {
 

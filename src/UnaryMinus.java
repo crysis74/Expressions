@@ -1,4 +1,4 @@
-    public class UnaryMinus  extends Operation {
+    public class UnaryMinus  extends Unary {
 
     public UnaryMinus(Expression per1) {
 
