@@ -6,9 +6,9 @@ public abstract class Unary implements Expression {
 
         this.per1 = per1;
     }
-    public  int evaluate(int x, int y, int z) {
+    public  int evaluate(int x, int y, int z)  throws ArithmeticExceptoin{
 
-        int first = per1.evaluate(x, y, z);
+        int first = per1.evaluate(x, y, z) ;
         return result(first);
 
     };

@@ -6,12 +6,12 @@ public class Divide extends Binary {
 
     }
 
-    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin{
-        int denominator = per2.evaluate(x, y, z);
-        if(denominator == 0){
+    public int result(int first, int second) throws ArithmeticExceptoin{
+
+        if(second == 0){
             throw new ArithmeticExceptoin("Деление на ноль");
         }
-        return per1.evaluate(x, y, z) / denominator;
+        return first / second;
 
     }
 }

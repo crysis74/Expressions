@@ -10,7 +10,7 @@ public abstract class Binary implements Expression {
     }
 
 
-    public  int evaluate(int x, int y, int z) {
+    public  int evaluate(int x, int y, int z) throws ArithmeticExceptoin {
 
         int first = per1.evaluate(x, y, z);
         int second = per2.evaluate(x, y, z);
