@@ -4,7 +4,7 @@ public class Variable implements Expression {
         this.let = let;
     }
 
-    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin{
+    public int evaluate(int x, int y, int z) {
 
         switch (let){
             case 'x': return x;

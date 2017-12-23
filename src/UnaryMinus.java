@@ -5,9 +5,9 @@
         super(per1);
 
     }
-    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin {
+    public int result(int first) throws ArithmeticExceptoin {
 
-        return  - (per1.evaluate(x, y, z));
+        return  - first;
 
     }
 }

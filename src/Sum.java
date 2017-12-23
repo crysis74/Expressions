@@ -5,8 +5,8 @@ public class Sum extends Binary {
         super(per1, per2);
 
     }
-    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin {
-        return per1.evaluate(x, y, z) + per2.evaluate(x, y, z);
+    public int result(int first, int second) throws ArithmeticExceptoin {
+        return first + second;
     }
 
 

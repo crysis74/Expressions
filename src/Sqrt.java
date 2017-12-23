@@ -6,9 +6,9 @@ public class Sqrt extends Unary {
 
     }
 
-    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin {
+    public int result(int first) throws ArithmeticExceptoin {
 
-        int result = (int)Math.sqrt(per1.evaluate(x, y, z));
+        int result = (int)Math.sqrt(first);
         if (result < 0){
             throw new ArithmeticExceptoin("Ошибка взятия корня из отрицателнього числа");
         }

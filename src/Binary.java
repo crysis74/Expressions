@@ -8,5 +8,14 @@ public abstract class Binary implements Expression {
         this.per1 = per1;
         this.per2 = per2;
     }
-    public abstract int evaluate(int x, int y, int z) throws ArithmeticExceptoin;
+
+
+    public  int evaluate(int x, int y, int z) {
+
+        int first = per1.evaluate(x, y, z);
+        int second = per2.evaluate(x, y, z);
+        return result(first , second);
+
+    };
+    protected abstract int result(int first, int second) throws ArithmeticExceptoin;
 }
