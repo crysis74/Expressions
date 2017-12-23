@@ -7,7 +7,7 @@ public class Sqr extends Unary {
     }
     public int result(int first) throws ArithmeticExceptoin {
 
-        return (int)Math.pow(first);
+        return (int)Math.pow(first, 2);
 
     }
 }
