@@ -3,7 +3,7 @@ public class Constant implements Expression {
     public Constant(int constan){
         this.constan = constan;
     }
-    public int evaluate(int x, int y, int z){
+    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin{
         return constan;
     }
 

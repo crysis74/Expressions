@@ -1,10 +1,13 @@
-    public class UnaryMinus  implements Expression {
-    private Expression per;
+    public class UnaryMinus  extends Operation {
 
-    public UnaryMinus(Expression per) {
-        this.per = per;
+    public UnaryMinus(Expression per1) {
+
+        super(per1);
+
     }
-    public int evaluate(int x, int y, int z) {
-        return per.evaluate(x, y, z) - 1;
+    public int evaluate(int x, int y, int z) throws ArithmeticExceptoin {
+
+        return  - (per1.evaluate(x, y, z));
+
     }
 }
