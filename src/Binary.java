@@ -1,4 +1,4 @@
-public abstract class Binary  {
+public abstract class Binary implements Expression {
 
     protected Expression per1;
     protected Expression per2;
